@@ -1,9 +1,11 @@
 from cms.app_base import CMSAppConfig
 from cms.models import Placeholder
+from cms.utils.i18n import get_language_tuple
 
-from djangocms_versioning.datastructures import VersionableItem, default_copy
+from djangocms_versioning.datastructures import VersionableItem
 
 from .models import FormContent
+from .rendering import render_form_content
 
 
 def copy_form_content(original_content):
@@ -45,11 +47,15 @@ def copy_form_content(original_content):
 
 
 class FormBuilderCMSConfig(CMSAppConfig):
+    cms_enabled = True
+    cms_toolbar_enabled_models = [(FormContent, render_form_content)]
     djangocms_versioning_enabled = True
     versioning = [
         VersionableItem(
             content_model=FormContent,
             grouper_field_name='form',
+            extra_grouping_fields=["language"],
+            version_list_filter_lookups={"language": get_language_tuple},
             copy_function=copy_form_content,
         ),
     ]

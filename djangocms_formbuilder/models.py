@@ -26,8 +26,8 @@ class FormContent(models.Model):
     )
 
     class Meta:
-        verbose_name = _('alias content')
-        verbose_name_plural = _('alias contents')
+        verbose_name = _('form content')
+        verbose_name_plural = _('form contents')
 
     def __str__(self):
         return '{} ({})'.format(self.name, self.language)
@@ -49,4 +49,4 @@ class FormContent(models.Model):
         return get_object_preview_url(self)
 
     def get_template(self):
-        return 'djangocms_alias/alias_content.html'
+        return 'djangocms_formbuilder/form_content_structure.html'
