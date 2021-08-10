@@ -1,8 +1,10 @@
 from setuptools import setup
 
+import djangocms_formbuilder
+
 setup(
     name='djangocms-formbuilder',
-    version='0.0.0',
+    version=djangocms_formbuilder.__version__,
     packages=[],
     url='',
     license='BSDv3',
