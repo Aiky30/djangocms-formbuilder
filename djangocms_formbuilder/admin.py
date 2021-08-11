@@ -1,5 +1,7 @@
 from django.contrib import admin
 
+from djangocms_versioning.admin import ExtendedVersionAdminMixin
+
 from .models import Form, FormContent
 
 
@@ -9,5 +11,5 @@ class FormAdmin(admin.ModelAdmin):
 
 
 @admin.register(FormContent)
-class FormContentAdmin(admin.ModelAdmin):
+class FormContentAdmin(ExtendedVersionAdminMixin, admin.ModelAdmin):
     pass
