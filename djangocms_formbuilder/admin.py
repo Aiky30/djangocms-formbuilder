@@ -1,4 +1,4 @@
-from django.contrib import admin  # noqa: F401
+from django.contrib import admin
 
 from djangocms_versioning.admin import ExtendedVersionAdminMixin
 
