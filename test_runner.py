@@ -1,4 +1,4 @@
-HELPER_SETTINGS={
+HELPER_SETTINGS = {
     'INSTALLED_APPS': [
         'djangocms_versioning',
         'djangocms_formbuilder',
