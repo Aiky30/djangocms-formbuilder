@@ -1,10 +1,10 @@
 from django.conf import settings
 from django.contrib.sites.models import Site
-from django.db import models, transaction
+from django.db import models
 from django.utils.functional import cached_property
 from django.utils.translation import ugettext_lazy as _
 
-from cms.models import CMSPlugin, Placeholder
+from cms.models import Placeholder
 from cms.models.fields import PlaceholderRelationField
 from cms.toolbar.utils import get_object_preview_url
 from cms.utils.i18n import get_current_language

@@ -1,5 +1,6 @@
 from cms.test_utils.testcases import CMSTestCase
 
+
 # TODO:
 #       Test the copy method
 

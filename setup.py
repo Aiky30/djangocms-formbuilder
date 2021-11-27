@@ -2,6 +2,7 @@ from setuptools import setup
 
 import djangocms_formbuilder
 
+
 setup(
     name='djangocms-formbuilder',
     version=djangocms_formbuilder.__version__,
