@@ -8,5 +8,6 @@ setup(
     license='BSDv3',
     author='Aiky30',
     author_email='',
-    description='A form builder for django cms 4+'
+    description='A form builder for django cms 4+',
+    test_suite="test_runner.run",
 )
