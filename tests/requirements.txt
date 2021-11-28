@@ -1,0 +1,5 @@
+django-app-helper
+https://github.com/divio/django-cms/tarball/66c70394c9e144281a0b47d93e3784d06318acf9#egg=django-cms
+https://github.com/django-cms/djangocms-text-ckeditor/tarball/50364c3a4b693fa93a8bfbd7152aff03a3849c1e#egg=djangocms-text-ckeditor
+https://github.com/divio/djangocms-versioning/tarball/492d01c974e40b007b71e2a7e961a9019a0d5ac4#egg=djangocms-versioning
+
