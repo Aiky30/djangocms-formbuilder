@@ -10,6 +10,14 @@ from djangocms_versioning.models import Version
 from djangocms_formbuilder.models import Form, FormContent
 
 
+class VersioningIntegrationTestCase(CMSTestCase):
+    def test_version_copy_method(self):
+        """
+        Creating a draft version from a published version copies the form correctly
+        """
+        self.assertTrue(False)
+
+
 class VersioningCMSPageIntegrationTestCase(CMSTestCase):
     def setUp(self):
         self.language = "en"
